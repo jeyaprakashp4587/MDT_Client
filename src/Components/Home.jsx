@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import bg from "../assets/bg1.png";
 import infaimg from "../assets/info.png";
 import vector from "../assets/Vector.png";
+import section1 from "../assets/section1.png";
 
 const Home = () => {
   return (
@@ -31,16 +32,34 @@ const Home = () => {
               <span></span>
               <h2 style={{ fontSize: "1.7em" }}>Features Services</h2>
             </div>
-            {/* wrappers */}
-            <div className="Home-wrapper2-left-section">
-              <div className="section-heading">
-                <h2 style={{ fontSize: "1em" }}>24/7 online Access</h2>{" "}
-                <span></span>
+          </div>
+          {/* wrappers */}
+          <div className="Home-wrapper2-left-section1">
+            <div
+              className="section-heading"
+              style={{ justifyContent: "flex-end" }}
+            >
+              <h2 style={{ fontSize: "1em" }}>24/7 online Access</h2>
+              <span></span>
+            </div>
+            {/* section content */}
+            <div className="Home-wrapper2-left-section1-content">
+              <div className="Home-wrapper2-left-section1-content-left">
+                <p className="Home-wrapper2-section-para">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam id maxime deserunt enim, culpa recusandae quidem odio
+                  non ducimus? Perferendis esse libero ipsa labore veritatis
+                  delectus similique odit ipsum repellendus error, aliquam
+                  magnam ipsam adipisci pariatur? Itaque veritatis praesentium
+                  obcaecati voluptatem voluptate cum, saepe eligendi tenetur.
+                  Sed, amet assumenda. Sapiente.
+                </p>
               </div>
-              {/* section content */}
-              <div className="Home-wrapper2-left-section-content">
-                <div className="Home-wrapper2-left-section-content-left"></div>
-                <div className="Home-wrapper2-left-section-content-right"></div>
+              <div className="Home-wrapper2-left-section1-content-right">
+                <img
+                  src={section1}
+                  className="Home-wrapper2-left-section-content-img"
+                />
               </div>
             </div>
           </div>
