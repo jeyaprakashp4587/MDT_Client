@@ -1,10 +1,13 @@
 import "./App.css";
-import Home from "./Components/Home";
+import { BrowserRouter } from "react-router-dom";
+import Layer from "./Layer/Layer";
 
 function App() {
   return (
     <>
-      <Home />
+      <BrowserRouter>
+        <Layer />
+      </BrowserRouter>
     </>
   );
 }
