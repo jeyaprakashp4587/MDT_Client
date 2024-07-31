@@ -59,6 +59,8 @@ const Layer = () => {
       </div>
       {/* header */}
       <div className="header">
+        {/* menu  */}
+        <FontAwesomeIcon icon={faBars} fontSize={20} className="menu" />
         <div className="input-header">
           <input placeholder="Search" className="header-input" />
           <FontAwesomeIcon
