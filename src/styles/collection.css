@@ -31,8 +31,57 @@
   letter-spacing: 1px;
   font-size: 0.8rem;
   transition: 0.2s ease;
-  border-bottom: 1px solid #42466941;
+  border-bottom: 4px solid #ffffff;
   &:hover {
-    border-bottom: 5px solid #ffcba1;
+    border-bottom: 4px solid #ffcba1;
   }
+}
+.collection-nav > ul > li.selected {
+  background-color: #ffcba1;
+  color: #fff;
+}
+/* book list wrapper */
+.collection-content-wrapper {
+  /* border: 1px solid red; */
+  margin: 1rem;
+  padding: 1.4rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 4px rgba(34, 34, 34, 0.349);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.booklist-section {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-between;
+  border-bottom: 1px solid #ffcba1;
+  padding-bottom: 0.8rem;
+}
+.booklist-section > h2 {
+  /* border: 1px solid red; */
+  color: #424669;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+.booklist-lists {
+  margin-top: 1rem;
+}
+.booklist-list {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  justify-content: space-between;
+  background-color: #424669;
+  padding: 1rem 0;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.booklist-list > div {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.booklist-list > div:nth-child(2) {
+  color: #ffcba1;
 }
