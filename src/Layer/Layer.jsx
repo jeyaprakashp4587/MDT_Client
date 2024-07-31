@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Home from "../Components/Home";
 import "../styles/LayerStyle.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,14 +14,22 @@ import {
   faPhone,
   faSignal,
 } from "@fortawesome/free-solid-svg-icons";
+import About from "../Components/About";
+import Collection from "../Components/Collection";
 
 const Layer = () => {
+  // navigation
+  const navigation = useNavigate();
+  //
   const menuBars = [
-    { name: "Home", icon: faHome },
-    { name: "About", icon: faCircleExclamation },
-    { name: "Collections", icon: faList },
-    { name: "E-Book", icon: faBook },
+    { name: "Home", icon: faHome, route: "/" },
+    { name: "About", icon: faCircleExclamation, route: "/about" },
+    { name: "Collections", icon: faList, route: "/collection" },
+    { name: "E-Book", icon: faBook, route: "ebook" },
   ];
+  // get current route namw
+
+  console.log("fdg");
   return (
     // layer wrapper
     <div className="Main-layer">
@@ -34,7 +42,7 @@ const Layer = () => {
         </div>
         {/* list menu */}
         {menuBars.map((bars) => (
-          <div className="menuBar">
+          <div className="menuBar" onClick={() => navigation(bars.route)}>
             <FontAwesomeIcon
               icon={bars.icon}
               fontSize={20}
@@ -70,6 +78,8 @@ const Layer = () => {
       <div className="pages">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/collection" element={<Collection />} />
         </Routes>
       </div>
     </div>

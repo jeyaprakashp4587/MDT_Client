@@ -4,6 +4,7 @@ import bg from "../assets/bg1.png";
 import infaimg from "../assets/info.png";
 import vector from "../assets/Vector.png";
 import section1 from "../assets/section1.png";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
   const learingImgs = [
@@ -15,6 +16,9 @@ const Home = () => {
     "https://i.ibb.co/LSSMtw1/image-21.png",
     "https://i.ibb.co/x1SKvQw/image-20.png",
   ];
+  // route name
+  const routeName = useLocation();
+  console.log(routeName.pathname);
   return (
     <div className="Home-wrapper">
       {/*  wrapper 1 image */}
