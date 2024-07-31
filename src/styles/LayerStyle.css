@@ -14,10 +14,19 @@
   border-style: solid;
   border-color: #f8b179;
   padding: 2rem;
+  position: relative;
   /* display: flex;
   align-items: center;
   flex-direction: column; */
   /* justify-content: center; */
+}
+.book-icon {
+  position: absolute;
+  bottom: 0;
+  width: 12rem;
+  right: 2rem;
+  align-self: center;
+  opacity: 0.1;
 }
 .menuBar {
   display: flex;
