@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Home from "../Components/Home";
 import "../styles/LayerStyle.css";
@@ -13,6 +13,7 @@ import {
   faMagnifyingGlass,
   faPhone,
   faSignal,
+  faTimes,
 } from "@fortawesome/free-solid-svg-icons";
 import About from "../Components/About";
 import Collection from "../Components/Collection";
@@ -27,46 +28,54 @@ const Layer = () => {
     { name: "Collections", icon: faList, route: "/collection" },
     { name: "E-Book", icon: faBook, route: "ebook" },
   ];
-  // get current route namw
+  //
+  const [menu, setMenu] = useState(false);
+  const HandleOpen = () => {
+    setMenu(true);
+  };
+  const HandleClose = () => {
+    setMenu(false);
+  };
 
-  console.log("fdg");
   return (
     // layer wrapper
     <div className="Main-layer">
       {/* sidebar */}
-      <div className="sidebar">
-        {/* menu button */}
-        <div className="menuBar">
-          <FontAwesomeIcon icon={faBars} fontSize={20} className="barIcon" />
-          Menu
-        </div>
+      <div className="sidebar" style={{ display: menu ? "flex" : "none" }}>
         {/* list menu */}
+        {/* close bar */}
+        <FontAwesomeIcon
+          icon={faTimes}
+          className="closeMenu"
+          onClick={HandleClose}
+        />
         {menuBars.map((bars) => (
           <div className="menuBar" onClick={() => navigation(bars.route)}>
             <FontAwesomeIcon
               icon={bars.icon}
               fontSize={20}
-              className="barIcon"
+              className="barIcon "
             />
-            {bars.name}
+            <p>{bars.name}</p>
           </div>
         ))}
         {/* book image */}
         <img
           src="https://i.ibb.co/Lx13Bcm/open-book.png"
-          className="book-icon"
+          className=" book-icon"
         />
       </div>
       {/* header */}
-      <div className="header">
+      <div className="main-header">
         {/* menu  */}
-        <FontAwesomeIcon icon={faBars} fontSize={20} className="menu" />
+        <FontAwesomeIcon icon={faBars} className="menu" onClick={HandleOpen} />
         <div className="input-header">
-          <input placeholder="Search" className="header-input" />
+          <input placeholder="Search" className="header-input " />
           <FontAwesomeIcon
             icon={faMagnifyingGlass}
             color="#424669"
             fontSize={20}
+            className="text-zinc-400"
           />
         </div>
         <div className="header-contact">
@@ -77,7 +86,7 @@ const Layer = () => {
         </div>
       </div>
       {/* pages */}
-      <div className="pages">
+      <div className="pages container">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -23,7 +23,7 @@ const Home = () => {
     <div className="Home-wrapper">
       {/*  wrapper 1 image */}
       <div className="Home-wrapper-1">
-        <h1 className="img-label">MDT HINDHU COLLEGE LIBRARY</h1>
+        <h1 className="img-label ">MDT HINDHU COLLEGE LIBRARY</h1>
         <img src={bg} alt="bg cover" />
       </div>
       {/*  wrapper 2 features*/}

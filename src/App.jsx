@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Layer />
+        <div className="App">
+          <Layer />
+        </div>
       </BrowserRouter>
     </>
   );
