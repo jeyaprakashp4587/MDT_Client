@@ -2,18 +2,15 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 100%;
-  grid-template-rows: auto auto;
+  grid-template-rows: max-content max-content auto;
   /* overflow: hidden; */
 }
 .sidebar {
-  position: absolute;
+  grid-row: 2;
   display: flex;
   flex-direction: column;
-  width: 20%;
-  height: 100vh;
   background-color: #424669;
-  z-index: 30;
-  padding: 2rem;
+  overflow: hidden;
 }
 
 .book-icon {
@@ -26,7 +23,7 @@
 }
 .closeMenu {
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: 1rem;
   font-size: 2rem;
   color: white;
@@ -34,7 +31,7 @@
 .menu {
   /* display: none; */
   color: #e4e4e4;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 .menuBar {
   margin-top: 1rem;
@@ -44,7 +41,6 @@
   font-size: 1.1rem;
   color: white;
   /* border: 1px solid red; */
-  width: 80%;
   margin-bottom: 1.3rem;
   transition: 0.4s ease;
   &:hover {
@@ -63,12 +59,12 @@
 }
 /* header sction */
 .main-header {
-  border: 1px solid rgb(0, 255, 42);
+  /* border: 1px solid rgb(0, 255, 42);  */
   background-color: #424669;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.3rem 2rem;
+  padding: 1.3rem 1rem;
 }
 .input-header {
   background: white;
@@ -77,6 +73,7 @@
   padding: 0.4rem 0.9rem;
   border-radius: 2rem;
   /* border: 1px solid red; */
+  justify-content: space-between;
 }
 .header-input {
   background-color: transparent;
@@ -100,11 +97,18 @@
   column-gap: 10px;
 }
 .pages {
-  border: 1px solid #ff0000;
+  border: 0px solid #ff0000;
   overflow: scroll;
+  margin-top: 1rem;
 }
 @media only screen and (max-width: 400px) {
   .input-header {
     display: none;
+  }
+  .sidebar {
+    /* position: absolute; */
+  }
+  .Main-layer {
+    grid-template-rows: max-content max-content max-content;
   }
 }

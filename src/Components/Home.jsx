@@ -38,15 +38,15 @@ const Home = () => {
           </div>
           {/* wrappers */}
           <div className="Home-wrapper2-left-section1">
-            <div
-              className="section-heading"
-              style={{ justifyContent: "flex-end" }}
-            >
-              <h2 style={{ fontSize: "1em" }}>24/7 online Access</h2>
-              <span></span>
-            </div>
             {/* section content 1*/}
             <div className="Home-wrapper2-left-section1-content">
+              <div
+                className="section-heading"
+                style={{ justifyContent: "flex-end" }}
+              >
+                <h2 style={{ fontSize: "1em" }}>24/7 online Access</h2>
+                <span></span>
+              </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <p className="Home-wrapper2-section-para">
                   Access our extensive collection of digital resources anytime,
@@ -57,24 +57,23 @@ const Home = () => {
               </div>
               <div className="Home-wrapper2-left-section1-content-right">
                 <img
-                  src={section1}
+                  src="https://i.ibb.co/yWpzT37/section3.png"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>
             </div>
             {/* section content 2*/}
-            <div
-              className="section-heading"
-              style={{ justifyContent: "flex-start" }}
-            >
-              {" "}
-              <span></span>
-              <h2 style={{ fontSize: "1em" }}>Research Asisstance</h2>
-            </div>
             <div className="Home-wrapper2-left-section2-content">
+              <div
+                className="section-heading"
+                style={{ justifyContent: "flex-start" }}
+              >
+                <span></span>
+                <h2 style={{ fontSize: "1em" }}>Research Asisstance</h2>
+              </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <img
-                  src={section1}
+                  src="https://i.ibb.co/Qfs6ptv/4.png"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>
@@ -88,14 +87,14 @@ const Home = () => {
               </div>
             </div>
             {/* section content 3*/}
-            <div
-              className="section-heading"
-              style={{ justifyContent: "flex-end" }}
-            >
-              <h2 style={{ fontSize: "1em" }}>InterLibrary Loan</h2>
-              <span></span>
-            </div>
             <div className="Home-wrapper2-left-section1-content">
+              <div
+                className="section-heading"
+                style={{ justifyContent: "flex-end" }}
+              >
+                <h2 style={{ fontSize: "1em" }}>InterLibrary Loan</h2>
+                <span></span>
+              </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <p className="Home-wrapper2-section-para">
                   Can't find what you're looking for in our library? No problem!
@@ -106,23 +105,23 @@ const Home = () => {
               </div>
               <div className="Home-wrapper2-left-section1-content-right">
                 <img
-                  src={section1}
+                  src="https://i.ibb.co/6sxMrjr/section1.png"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>
             </div>
             {/* section content 4*/}
-            <div
-              className="section-heading"
-              style={{ justifyContent: "flex-start" }}
-            >
-              <span></span>
-              <h2 style={{ fontSize: "1em" }}>Tech Support</h2>
-            </div>
-            <div className="Home-wrapper2-left-section4-content">
+            <div className="Home-wrapper2-left-section2-content">
+              <div
+                className="section-heading"
+                style={{ justifyContent: "flex-start" }}
+              >
+                <span></span>
+                <h2 style={{ fontSize: "1em" }}>Tech Support</h2>
+              </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <img
-                  src={section1}
+                  src="https://i.ibb.co/MGqPyVp/3.png"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>

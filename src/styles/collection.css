@@ -1,7 +1,5 @@
 .collection-wrapper {
-  /* border: 1px solid red; */
-  overflow: scroll;
-  width: 100%;
+  border: 1px solid blue;
   height: 100%;
 }
 .collection-heading {
