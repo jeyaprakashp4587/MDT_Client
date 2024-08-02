@@ -2,8 +2,7 @@
   display: grid;
   height: 100vh;
   grid-template-columns: 100%;
-  grid-template-rows: max-content max-content auto;
-  /* overflow: hidden; */
+  grid-template-rows: max-content max-content max-content;
 }
 .sidebar {
   grid-row: 2;
@@ -11,19 +10,12 @@
   flex-direction: column;
   background-color: #424669;
   overflow: hidden;
-}
-
-.closeMenu {
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
-  font-size: 2rem;
-  color: white;
+  z-index: 10;
 }
 .menu {
   /* display: none; */
   color: #e4e4e4;
-  font-size: 1.5rem;
+  font-size: 1.9rem;
 }
 .menuBar {
   margin-top: 1rem;
@@ -41,7 +33,7 @@
 }
 .barIcon {
   background: #676f9d;
-  padding: 0.8rem 0.6rem;
+  padding: 0.9rem 0.6rem;
   min-width: 30px;
   border-radius: 10px;
   transition: 0.4s ease;
@@ -53,10 +45,14 @@
 .main-header {
   /* border: 1px solid rgb(0, 255, 42);  */
   background-color: #424669;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
+  /* justify-content: space-between; */
+  grid-template-columns: 1fr 2fr 5fr;
   padding: 1.4rem 1rem;
+}
+.main-header > img {
+  display: none;
 }
 .input-header {
   background: white;
@@ -76,6 +72,11 @@
     outline: none;
   }
 }
+.header-contact {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: flex-end;
+}
 .header-contact > button {
   background-color: #f8b179;
   border: none;
@@ -88,19 +89,53 @@
   align-items: center;
   column-gap: 10px;
 }
+
 .pages {
   border: 0px solid #ff0000;
   overflow: scroll;
   margin-top: 1rem;
 }
+.layer-letter {
+  position: fixed;
+  z-index: 9;
+  font-size: 7rem;
+  text-align: center;
+  font-weight: 900;
+  /* border: 1px solid red; */
+  letter-spacing: 1rem;
+  filter: opacity(0.04);
+  align-self: center;
+  width: 100%;
+  color: #000000;
+  text-shadow: 1px 1px 5px #050505d3;
+  animation: letter infinite 4s ease;
+  text-align: center;
+}
+@keyframes letter {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+/* responsive ------------------ */
 @media only screen and (max-width: 400px) {
   .input-header {
     display: none;
   }
-  .sidebar {
-    /* position: absolute; */
+  .main-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    /* column-gap: 2rem; */
   }
   .Main-layer {
     grid-template-rows: max-content max-content max-content;
+  }
+  .main-header > img {
+    display: flex;
   }
 }

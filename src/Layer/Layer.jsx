@@ -8,6 +8,7 @@ import {
   faBars,
   faBook,
   faCircleExclamation,
+  faEnvelope,
   faHome,
   faList,
   faMagnifyingGlass,
@@ -17,6 +18,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import About from "../Components/About";
 import Collection from "../Components/Collection";
+import logo from "../assets/logo1.png";
 
 const Layer = () => {
   // navigation
@@ -26,7 +28,7 @@ const Layer = () => {
     { name: "Home", icon: faHome, route: "/" },
     { name: "About", icon: faCircleExclamation, route: "/about" },
     { name: "Collections", icon: faList, route: "/collection" },
-    { name: "E-Book", icon: faBook, route: "ebook" },
+    { name: "E-Book", icon: faBook, route: "/ebook" },
   ];
   //
   const [menu, setMenu] = useState(false);
@@ -37,6 +39,8 @@ const Layer = () => {
   return (
     // layer wrapper
     <div className="Main-layer">
+      {/* layer letter */}
+      <h2 className="layer-letter">MDT</h2>
       {/* sidebar */}
       <div
         className="sidebar"
@@ -66,6 +70,7 @@ const Layer = () => {
           className="menu"
           onClick={HandleMenu}
         />
+        <img src={logo} className="logo" style={{ width: "50px" }} />
         <div className="input-header">
           <input placeholder="Search" className="header-input " />
           <FontAwesomeIcon
@@ -77,7 +82,7 @@ const Layer = () => {
         </div>
         <div className="header-contact">
           <button>
-            <FontAwesomeIcon icon={faAddressBook} fontSize={17} />
+            <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 20 }} />
             contact us
           </button>
         </div>

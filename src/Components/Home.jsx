@@ -1,9 +1,6 @@
 import React from "react";
 import "../styles/Home.css";
 import bg from "../assets/bg1.png";
-import infaimg from "../assets/info.png";
-import vector from "../assets/Vector.png";
-import section1 from "../assets/section1.png";
 import { useLocation } from "react-router-dom";
 
 const Home = () => {
@@ -18,7 +15,8 @@ const Home = () => {
   ];
   // route name
   const routeName = useLocation();
-  console.log(routeName.pathname);
+  // carosel images
+
   return (
     <div className="Home-wrapper">
       {/*  wrapper 1 image */}
@@ -26,6 +24,7 @@ const Home = () => {
         <h1 className="img-label ">MDT HINDHU COLLEGE LIBRARY</h1>
         <img src={bg} alt="bg cover" />
       </div>
+
       {/*  wrapper 2 features*/}
       <div className="Home-wrapper-2">
         <div className="Home-wrapper-2-left">
@@ -54,7 +53,7 @@ const Home = () => {
               </div>
               <div className="Home-wrapper2-left-section1-content-right">
                 <img
-                  src="https://i.ibb.co/yWpzT37/section3.png"
+                  src="https://i.ibb.co/CPddvH4/home1.jpg"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>
@@ -67,7 +66,7 @@ const Home = () => {
               </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <img
-                  src="https://i.ibb.co/Qfs6ptv/4.png"
+                  src="https://i.ibb.co/XsP5nT5/home3.jpg"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>
@@ -96,7 +95,7 @@ const Home = () => {
               </div>
               <div className="Home-wrapper2-left-section1-content-right">
                 <img
-                  src="https://i.ibb.co/6sxMrjr/section1.png"
+                  src="https://i.ibb.co/85Zn48J/home4.jpg"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>
@@ -112,7 +111,7 @@ const Home = () => {
               </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <img
-                  src="https://i.ibb.co/MGqPyVp/3.png"
+                  src="https://i.ibb.co/WtyfLNb/hom2.jpg"
                   className="Home-wrapper2-left-section-content-img"
                 />
               </div>

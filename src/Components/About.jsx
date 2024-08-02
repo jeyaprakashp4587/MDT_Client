@@ -20,12 +20,12 @@ const About = () => {
         {/* display gallery */}
         <div className="intro-gallery">
           <div>
-            <img src="https://i.ibb.co/cXx9pHh/3.png" alt="" />
+            <img src="https://i.ibb.co/ypTTwGB/about1.jpg" alt="" />
           </div>
           <div>
-            <img src="https://i.ibb.co/b12ynvN/1.png" alt="" />
-            <img src="https://i.ibb.co/6FTT7W0/4.png" alt="" />
-            <img src="https://i.ibb.co/x3ZG32R/2.png" alt="" />
+            <img src="https://i.ibb.co/brTbNTH/about2.jpg" alt="" />
+            <img src="https://i.ibb.co/WtyfLNb/hom2.jpg" alt="" />
+            <img src="https://i.ibb.co/CPddvH4/home1.jpg" alt="" />
           </div>
         </div>
       </div>
