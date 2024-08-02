@@ -51,16 +51,12 @@ const Layer = () => {
             <FontAwesomeIcon
               icon={bars.icon}
               fontSize={20}
-              className="barIcon "
+              className="barIcon"
             />
             {bars.name}
           </div>
         ))}
         {/* book image */}
-        <img
-          src="https://i.ibb.co/Lx13Bcm/open-book.png"
-          className=" book-icon"
-        />
       </div>
       {/* header */}
       <div className="main-header">

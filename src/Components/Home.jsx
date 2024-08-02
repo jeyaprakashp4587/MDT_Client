@@ -40,12 +40,9 @@ const Home = () => {
           <div className="Home-wrapper2-left-section1">
             {/* section content 1*/}
             <div className="Home-wrapper2-left-section1-content">
-              <div
-                className="section-heading"
-                style={{ justifyContent: "flex-end" }}
-              >
-                <h2 style={{ fontSize: "1em" }}>24/7 online Access</h2>
+              <div className="section-heading">
                 <span></span>
+                <h2 style={{ fontSize: "1em" }}>24/7 online Access</h2>
               </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <p className="Home-wrapper2-section-para">
@@ -64,10 +61,7 @@ const Home = () => {
             </div>
             {/* section content 2*/}
             <div className="Home-wrapper2-left-section2-content">
-              <div
-                className="section-heading"
-                style={{ justifyContent: "flex-start" }}
-              >
+              <div className="section-heading">
                 <span></span>
                 <h2 style={{ fontSize: "1em" }}>Research Asisstance</h2>
               </div>
@@ -88,12 +82,9 @@ const Home = () => {
             </div>
             {/* section content 3*/}
             <div className="Home-wrapper2-left-section1-content">
-              <div
-                className="section-heading"
-                style={{ justifyContent: "flex-end" }}
-              >
-                <h2 style={{ fontSize: "1em" }}>InterLibrary Loan</h2>
+              <div className="section-heading">
                 <span></span>
+                <h2 style={{ fontSize: "1em" }}>InterLibrary Loan</h2>
               </div>
               <div className="Home-wrapper2-left-section1-content-left">
                 <p className="Home-wrapper2-section-para">
@@ -139,7 +130,6 @@ const Home = () => {
         <div className="Home-wrapper-2-right">
           <div className="section-heading">
             <span></span>
-            <img src={vector} alt="" />
             <h2>Most Popular Books</h2>
           </div>
         </div>
