@@ -19,6 +19,7 @@ import {
 import About from "../Components/About";
 import Collection from "../Components/Collection";
 import logo from "../assets/logo1.png";
+import Ebook from "../Components/Ebook";
 
 const Layer = () => {
   // navigation
@@ -93,6 +94,7 @@ const Layer = () => {
           <Route path="/" element={<Home />} />
           <Route path="/collection" element={<Collection />} />
           <Route path="/about" element={<About />} />
+          <Route path="ebook" element={<Ebook />} />
         </Routes>
       </div>
     </div>
