@@ -1,0 +1,37 @@
+.contact-wrapper {
+  /* border: 1px solid red; */
+  height: 100%;
+  z-index: 30;
+  position: relative;
+}
+.contact-wrapper-inputs {
+  /* border: 2px solid blue;    */
+  flex-direction: column;
+  display: flex;
+  row-gap: 1.4rem;
+  margin-top: 2rem;
+
+  /* grid-template-columns: repeat(2, 1fr); */
+}
+.contact-wrapper > h3 {
+  font-size: 3.5rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #424669;
+}
+
+.contact-wrapper-inputs button {
+  padding: 1rem;
+  border: 0px;
+  background-color: #f8b179;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 400px) {
+  .contact-wrapper > h3 {
+    font-size: 2rem;
+    /* font-weight: 600; */
+  }
+}

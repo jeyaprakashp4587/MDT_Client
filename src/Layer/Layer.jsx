@@ -20,6 +20,7 @@ import About from "../Components/About";
 import Collection from "../Components/Collection";
 import logo from "../assets/logo1.png";
 import Ebook from "../Components/Ebook";
+import Contact from "../Components/Contact";
 
 const Layer = () => {
   // navigation
@@ -82,7 +83,7 @@ const Layer = () => {
           />
         </div>
         <div className="header-contact">
-          <button>
+          <button onClick={() => navigation("contact")}>
             <FontAwesomeIcon icon={faEnvelope} style={{ fontSize: 20 }} />
             contact us
           </button>
@@ -95,6 +96,7 @@ const Layer = () => {
           <Route path="/collection" element={<Collection />} />
           <Route path="/about" element={<About />} />
           <Route path="ebook" element={<Ebook />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
       </div>
     </div>
