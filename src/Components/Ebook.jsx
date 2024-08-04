@@ -10,7 +10,7 @@ const Ebook = () => {
         {/* book list heading */}
         <div className="section-heading">
           <span></span>
-          <h2>Journals</h2>
+          <h2>E-Books</h2>
         </div>
         {/* section */}
         <div className="booklist-section">
