@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import Ebookjson from "../json/Ebook.json";
 
 const Ebook = () => {
+  const [ebooks, setEbooks] = useState([]);
+  useEffect(() => {
+    setEbooks(Ebookjson.ebooks);
+  }, []);
+
   return (
     <div className="Ebook-wrapper">
       {/* Ebook heading */}
@@ -20,44 +26,16 @@ const Ebook = () => {
           <h2>Publisher</h2>
         </div>
         {/* lists */}
-        <div className="booklist-lists">
-          <div className="booklist-list">
-            <div>1</div>
-            <div>Pirates of the caribean </div>
-            <div>Tamil</div>
-            <div>Raja Publication</div>
+        {ebooks.map((book, index) => (
+          <div className="booklist-lists">
+            <div className="booklist-list">
+              <div>{index}</div>
+              <div>{book.bookName} </div>
+              <div>{book.language}</div>
+              <div>{book.authorName}</div>
+            </div>
           </div>
-          <div className="booklist-list">
-            <div>1</div>
-            <div>Pirates of the caribean </div>
-            <div>Tamil</div>
-            <div>Raja Publication</div>
-          </div>
-          <div className="booklist-list">
-            <div>1</div>
-            <div>Pirates of the caribean </div>
-            <div>Tamil</div>
-            <div>Raja Publication</div>
-          </div>
-          <div className="booklist-list">
-            <div>1</div>
-            <div>Pirates of the caribean </div>
-            <div>Tamil</div>
-            <div>Raja Publication</div>
-          </div>
-          <div className="booklist-list">
-            <div>1</div>
-            <div>Pirates of the caribean </div>
-            <div>Tamil</div>
-            <div>Raja Publication</div>
-          </div>
-          <div className="booklist-list">
-            <div>1</div>
-            <div>Pirates of the caribean </div>
-            <div>Tamil</div>
-            <div>Raja Publication</div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -95,6 +95,8 @@
   border: 0px solid #ff0000;
   overflow: scroll;
   margin-top: 1rem;
+  position: relative;
+  z-index: 30;
 }
 .layer-letter {
   position: fixed;

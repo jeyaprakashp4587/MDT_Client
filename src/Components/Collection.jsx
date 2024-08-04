@@ -23,7 +23,9 @@ const Collection = () => {
           <li
             key={index}
             className={selectedItem === index ? "selected" : ""}
-            onClick={() => handleClick(index)}
+            onClick={() => {
+              handleClick(index);
+            }}
           >
             {item}
           </li>

@@ -49,6 +49,9 @@
   column-gap: 0.5rem;
   color: white;
   letter-spacing: 1px;
+  font-size: 1rem;
+  transition: 0.8s ease;
+  cursor: pointer;
 }
 /* responsive */
 @media screen and (max-width: 400px) {

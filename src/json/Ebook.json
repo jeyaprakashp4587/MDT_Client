@@ -1,0 +1,274 @@
+{
+  "ebooks": [
+    {
+      "bookName": "The Great Adventure",
+      "authorName": "John Doe",
+      "releaseDate": "2020-01-15",
+      "language": "English"
+    },
+    {
+      "bookName": "Mystery of the Night",
+      "authorName": "Jane Smith",
+      "releaseDate": "2019-03-22",
+      "language": "English"
+    },
+    {
+      "bookName": "El Gran Viaje",
+      "authorName": "Carlos Ruiz",
+      "releaseDate": "2018-07-30",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "La Nuit Mystérieuse",
+      "authorName": "Marie Dupont",
+      "releaseDate": "2017-11-11",
+      "language": "French"
+    },
+    {
+      "bookName": "Die Große Reise",
+      "authorName": "Hans Müller",
+      "releaseDate": "2016-05-17",
+      "language": "German"
+    },
+    {
+      "bookName": "Avventura Grande",
+      "authorName": "Luca Rossi",
+      "releaseDate": "2015-09-09",
+      "language": "Italian"
+    },
+    {
+      "bookName": "Velika Avventura",
+      "authorName": "Ivan Petrov",
+      "releaseDate": "2021-02-14",
+      "language": "Russian"
+    },
+    {
+      "bookName": "Grand Voyage",
+      "authorName": "Chen Wei",
+      "releaseDate": "2022-04-25",
+      "language": "Chinese"
+    },
+    {
+      "bookName": "大冒险",
+      "authorName": "Hiroshi Yamamoto",
+      "releaseDate": "2020-12-12",
+      "language": "Japanese"
+    },
+    {
+      "bookName": "Una Gran Aventura",
+      "authorName": "Miguel Angel",
+      "releaseDate": "2019-08-05",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "Grande Aventura",
+      "authorName": "João Silva",
+      "releaseDate": "2018-10-10",
+      "language": "Portuguese"
+    },
+    {
+      "bookName": "The Silent Night",
+      "authorName": "Laura Johnson",
+      "releaseDate": "2017-06-19",
+      "language": "English"
+    },
+    {
+      "bookName": "El Silencio de la Noche",
+      "authorName": "Sofia Martinez",
+      "releaseDate": "2016-04-03",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "La Nuit Silencieuse",
+      "authorName": "Emilie Moreau",
+      "releaseDate": "2015-12-24",
+      "language": "French"
+    },
+    {
+      "bookName": "Die Stille Nacht",
+      "authorName": "Franz Schmidt",
+      "releaseDate": "2014-07-14",
+      "language": "German"
+    },
+    {
+      "bookName": "La Notte Silenziosa",
+      "authorName": "Giovanni Bianchi",
+      "releaseDate": "2013-03-31",
+      "language": "Italian"
+    },
+    {
+      "bookName": "Тихая ночь",
+      "authorName": "Olga Ivanova",
+      "releaseDate": "2021-11-20",
+      "language": "Russian"
+    },
+    {
+      "bookName": "Silent Night",
+      "authorName": "Li Wei",
+      "releaseDate": "2022-05-16",
+      "language": "Chinese"
+    },
+    {
+      "bookName": "静かな夜",
+      "authorName": "Akira Tanaka",
+      "releaseDate": "2020-01-01",
+      "language": "Japanese"
+    },
+    {
+      "bookName": "Noche Silenciosa",
+      "authorName": "Alejandro Diaz",
+      "releaseDate": "2019-10-22",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "Noite Silenciosa",
+      "authorName": "Carlos Pereira",
+      "releaseDate": "2018-02-14",
+      "language": "Portuguese"
+    },
+    {
+      "bookName": "The Hidden Truth",
+      "authorName": "Michael Brown",
+      "releaseDate": "2017-07-28",
+      "language": "English"
+    },
+    {
+      "bookName": "La Verdad Oculta",
+      "authorName": "Isabel Rodriguez",
+      "releaseDate": "2016-09-15",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "La Vérité Cachée",
+      "authorName": "Luc Martin",
+      "releaseDate": "2015-03-07",
+      "language": "French"
+    },
+    {
+      "bookName": "Die Verborgene Wahrheit",
+      "authorName": "Stefan Bauer",
+      "releaseDate": "2014-12-05",
+      "language": "German"
+    },
+    {
+      "bookName": "La Verità Nascosta",
+      "authorName": "Andrea Rossi",
+      "releaseDate": "2013-11-11",
+      "language": "Italian"
+    },
+    {
+      "bookName": "Скрытая правда",
+      "authorName": "Nikolai Sokolov",
+      "releaseDate": "2021-03-30",
+      "language": "Russian"
+    },
+    {
+      "bookName": "Hidden Truth",
+      "authorName": "Chen Liu",
+      "releaseDate": "2022-08-12",
+      "language": "Chinese"
+    },
+    {
+      "bookName": "隠された真実",
+      "authorName": "Kenji Nakamura",
+      "releaseDate": "2020-04-18",
+      "language": "Japanese"
+    },
+    {
+      "bookName": "Verdad Oculta",
+      "authorName": "Pedro Gonzalez",
+      "releaseDate": "2019-01-27",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "Verdade Oculta",
+      "authorName": "Paulo Souza",
+      "releaseDate": "2018-11-06",
+      "language": "Portuguese"
+    },
+    {
+      "bookName": "The Last Hope",
+      "authorName": "Sarah Williams",
+      "releaseDate": "2017-05-09",
+      "language": "English"
+    },
+    {
+      "bookName": "La Última Esperanza",
+      "authorName": "Ana Garcia",
+      "releaseDate": "2016-08-23",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "Le Dernier Espoir",
+      "authorName": "Sophie Durand",
+      "releaseDate": "2015-01-30",
+      "language": "French"
+    },
+    {
+      "bookName": "Die Letzte Hoffnung",
+      "authorName": "Laura Fischer",
+      "releaseDate": "2014-06-08",
+      "language": "German"
+    },
+    {
+      "bookName": "L'Ultima Speranza",
+      "authorName": "Marco Ricci",
+      "releaseDate": "2013-09-13",
+      "language": "Italian"
+    },
+    {
+      "bookName": "Последняя надежда",
+      "authorName": "Elena Morozova",
+      "releaseDate": "2021-10-01",
+      "language": "Russian"
+    },
+    {
+      "bookName": "Last Hope",
+      "authorName": "Zhang Min",
+      "releaseDate": "2022-03-19",
+      "language": "Chinese"
+    },
+    {
+      "bookName": "最後の希望",
+      "authorName": "Yuki Matsuda",
+      "releaseDate": "2020-02-28",
+      "language": "Japanese"
+    },
+    {
+      "bookName": "Esperanza Final",
+      "authorName": "Raul Torres",
+      "releaseDate": "2019-07-17",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "Esperança Final",
+      "authorName": "Fernanda Alves",
+      "releaseDate": "2018-05-01",
+      "language": "Portuguese"
+    },
+    {
+      "bookName": "The Secret Garden",
+      "authorName": "Emma Taylor",
+      "releaseDate": "2017-12-20",
+      "language": "English"
+    },
+    {
+      "bookName": "El Jardín Secreto",
+      "authorName": "Gabriela Lopez",
+      "releaseDate": "2016-03-22",
+      "language": "Spanish"
+    },
+    {
+      "bookName": "Le Jardin Secret",
+      "authorName": "Julien Lefebvre",
+      "releaseDate": "2015-07-29",
+      "language": "French"
+    },
+    {
+      "bookName": "Der Geheime Garten",
+      "authorName": "Klaus Weber",
+      "releaseDate": "2014-10-11",
+      "language": "Tamil"
+    }
+  ]
+}

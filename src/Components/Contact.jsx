@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faMobile,
+  faPaperPlane,
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
@@ -18,12 +19,16 @@ const Contact = () => {
         <TextField id="outlined-basic" label="Email" variant="outlined" />
         <TextField id="outlined-basic" label="Message" variant="outlined" />
         <button>
-          <FontAwesomeIcon icon={faEnvelope} /> submit
+          <FontAwesomeIcon icon={faPaperPlane} /> submit
         </button>
       </div>
       <Divider textAlign="center">OR</Divider>
       <div className="contact-options">
-        <Paper className="contact-option bg-dark" style={{ color: "white" }}>
+        <Paper
+          className="contact-option bg-dark"
+          style={{ color: "white" }}
+          elevation={5}
+        >
           <FontAwesomeIcon icon={faPhone} />
           +91 9025167302
         </Paper>
