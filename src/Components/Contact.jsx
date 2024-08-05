@@ -9,8 +9,27 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+// import Api from "../Api";
+import axios from "axios";
 
 const Contact = () => {
+  // whats app link
+  const link = "https://wa.me/message/6NF3SS3SXRUUM1";
+  const whatsApp = () => {
+    window.open(link);
+  };
+
+  const sendMail = async () => {
+    const res = await axios.post(
+      "http://192.168.43.90:3000/Email-System/send-email",
+      {
+        name: "jp",
+        emailId: "jeyaprakashp431@gmail.com",
+        message: "jnjf",
+      }
+    );
+  };
+
   return (
     <div className="contact-wrapper">
       <h3>Let connect us</h3>
@@ -18,7 +37,7 @@ const Contact = () => {
         <TextField id="outlined-basic" label="Full Name" variant="outlined" />
         <TextField id="outlined-basic" label="Email" variant="outlined" />
         <TextField id="outlined-basic" label="Message" variant="outlined" />
-        <button>
+        <button onClick={() => sendMail()}>
           <FontAwesomeIcon icon={faPaperPlane} /> submit
         </button>
       </div>
@@ -36,8 +55,12 @@ const Contact = () => {
           <FontAwesomeIcon icon={faEnvelope} />
           mdtlib.Gmail.com
         </Paper>
-        <Paper className="contact-option bg-danger" style={{ color: "white" }}>
-          <FontAwesomeIcon icon={faWhatsapp} />
+        <Paper
+          className="contact-option bg-danger"
+          style={{ color: "white" }}
+          onClick={whatsApp}
+        >
+          <FontAwesomeIcon icon={faWhatsapp} onClick={whatsApp} />
           WhatsApp
         </Paper>
       </div>
