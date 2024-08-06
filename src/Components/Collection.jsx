@@ -16,9 +16,11 @@ const Collection = () => {
   return (
     <div className="collection-wrapper">
       {/* collection heading */}
-      <div className="collections-heading">Library Collection</div>
+      <div data-aos="zoom-in" className="collections-heading">
+        Library Collection
+      </div>
       {/* collections nav links */}
-      <div className="collection-nav">
+      <div data-aos="fade-right" className="collection-nav">
         {Navitems.map((item, index) => (
           <li
             key={index}
@@ -47,7 +49,7 @@ const Collection = () => {
         </div>
         {/* lists */}
         <div className="booklist-lists">
-          <div className="booklist-list">
+          <div className="booklist-list" data-aos="zoom-out">
             <div>1</div>
             <div>Pirates of the caribean </div>
             <div>Tamil</div>

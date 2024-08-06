@@ -65,7 +65,7 @@ const Layer = () => {
         {/* book image */}
       </div>
       {/* header */}
-      <div className="main-header">
+      <div className="main-header" data-aos="fade-right">
         {/* menu  */}
         <FontAwesomeIcon
           icon={menu ? faTimes : faBars}

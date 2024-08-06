@@ -21,15 +21,17 @@ const Home = () => {
     <div className="Home-wrapper">
       {/*  wrapper 1 image */}
       <div className="Home-wrapper-1">
-        <h1 className="img-label ">MDT HINDHU COLLEGE LIBRARY</h1>
-        <img src={bg} alt="bg cover" />
+        <img src={bg} alt="bg cover" data-aos="fade-left" />
+        <h1 className="img-label" data-aos="zoom-out">
+          MDT HINDHU COLLEGE LIBRARY
+        </h1>
       </div>
 
       {/*  wrapper 2 features*/}
       <div className="Home-wrapper-2">
         <div className="Home-wrapper-2-left">
           {/* wrapper1 */}
-          <div className="Home-wrapper2-left-heading">
+          <div className="Home-wrapper2-left-heading" data-aos="zoom-in">
             <div className="section-heading">
               <span></span>
               <h2 style={{ fontSize: "1.7em" }}>Features Services</h2>
@@ -38,7 +40,10 @@ const Home = () => {
           {/* wrappers */}
           <div className="Home-wrapper2-left-section1">
             {/* section content 1*/}
-            <div className="Home-wrapper2-left-section1-content">
+            <div
+              className="Home-wrapper2-left-section1-content"
+              data-aos="fade-up-right"
+            >
               <div className="section-heading">
                 <span></span>
                 <h2 style={{ fontSize: "1em" }}>24/7 online Access</h2>
@@ -59,7 +64,10 @@ const Home = () => {
               </div>
             </div>
             {/* section content 2*/}
-            <div className="Home-wrapper2-left-section2-content">
+            <div
+              className="Home-wrapper2-left-section2-content"
+              data-aos="fade-up-left"
+            >
               <div className="section-heading">
                 <span></span>
                 <h2 style={{ fontSize: "1em" }}>Research Asisstance</h2>
@@ -80,7 +88,10 @@ const Home = () => {
               </div>
             </div>
             {/* section content 3*/}
-            <div className="Home-wrapper2-left-section1-content">
+            <div
+              className="Home-wrapper2-left-section1-content"
+              data-aos="fade-up-right"
+            >
               <div className="section-heading">
                 <span></span>
                 <h2 style={{ fontSize: "1em" }}>InterLibrary Loan</h2>
@@ -101,7 +112,10 @@ const Home = () => {
               </div>
             </div>
             {/* section content 4*/}
-            <div className="Home-wrapper2-left-section2-content">
+            <div
+              className="Home-wrapper2-left-section2-content"
+              data-aos="fade-up-left"
+            >
               <div
                 className="section-heading"
                 style={{ justifyContent: "flex-start" }}
@@ -142,7 +156,7 @@ const Home = () => {
         {/* learning images */}
         <div className="Home-wrapper-3-Images">
           {learingImgs.map((img) => (
-            <img src={img} className="learning-Img" />
+            <img src={img} className="learning-Img" data-aos="zoom-out" />
           ))}
         </div>
       </div>

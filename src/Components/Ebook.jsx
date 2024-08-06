@@ -10,7 +10,9 @@ const Ebook = () => {
   return (
     <div className="Ebook-wrapper">
       {/* Ebook heading */}
-      <div className="collections-heading">E-Books</div>
+      <div className="collections-heading" data-aos="zoom-in">
+        E-Books
+      </div>
       {/* books lists wrapper */}
       <div className="collection-content-wrapper">
         {/* book list heading */}
@@ -27,7 +29,11 @@ const Ebook = () => {
         </div>
         {/* lists */}
         {ebooks.map((book, index) => (
-          <div className="booklist-lists">
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="700"
+            className="booklist-lists"
+          >
             <div className="booklist-list">
               <div>{index}</div>
               <div>{book.bookName} </div>

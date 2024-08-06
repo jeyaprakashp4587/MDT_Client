@@ -92,7 +92,7 @@
 }
 
 .pages {
-  border: 0px solid #ff0000;
+  /* border: 3px solid #ff0000; */
   overflow: scroll;
   margin-top: 1rem;
   position: relative;
