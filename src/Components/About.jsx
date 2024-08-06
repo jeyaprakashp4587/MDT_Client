@@ -6,12 +6,12 @@ const About = () => {
     <div className="about-wrapper">
       {/* wrapper1 intro */}
       <div className="about-intro">
-        <div className="about-intro-heading">
+        <div className="about-intro-heading" data-aos="fade-left">
           <span></span>
           <h2>Welcome to our College Library</h2>
         </div>
-        <h4>Overview</h4>
-        <p>
+        <h4 data-aos="fade-right">Overview</h4>
+        <p data-aos="fade-left">
           Our college is proud to present a state-of-the-art library facility
           designed to cater to the academic and intellectual needs of our
           students and faculty. Spanning across two spacious levels, our library
@@ -19,19 +19,35 @@ const About = () => {
         </p>
         {/* display gallery */}
         <div className="intro-gallery">
-          <div>
+          <div data-aos="zoom-in">
             <img src="https://i.ibb.co/ypTTwGB/about1.jpg" alt="" />
           </div>
           <div>
-            <img src="https://i.ibb.co/brTbNTH/about2.jpg" alt="" />
-            <img src="https://i.ibb.co/WtyfLNb/hom2.jpg" alt="" />
-            <img src="https://i.ibb.co/CPddvH4/home1.jpg" alt="" />
+            <img
+              data-aos="zoom-out"
+              src="https://i.ibb.co/brTbNTH/about2.jpg"
+              alt=""
+            />
+            <img
+              data-aos="zoom-out"
+              src="https://i.ibb.co/WtyfLNb/hom2.jpg"
+              alt=""
+            />
+            <img
+              data-aos="zoom-out"
+              src="https://i.ibb.co/CPddvH4/home1.jpg"
+              alt=""
+            />
           </div>
         </div>
       </div>
       {/* wrapper2  resources*/}
       <div className="about-resource">
-        <div className="resources-box">
+        <div
+          className="resources-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <div className="section-heading">
             <span></span>
             <h2>Resources:</h2>
@@ -47,7 +63,11 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="academicHub-box">
+        <div
+          className="academicHub-box"
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+        >
           <div className="section-heading">
             <span></span>
             <h2>Academic Hub:</h2>
@@ -70,7 +90,7 @@ const About = () => {
         </div>
       </div>
       {/* wrapper3 features */}
-      <div className="about-features">
+      <div className="about-features" data-aos="fade-left">
         <div className="section-heading">
           <span></span>
           <h2>Special Features</h2>
@@ -91,7 +111,7 @@ const About = () => {
         </ul>
       </div>
       {/* statics */}
-      <div className="about-statics">
+      <div className="about-statics" data-aos="fade-right">
         <div className="section-heading">
           <span></span>
           <h2>Statics</h2>

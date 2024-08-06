@@ -23,7 +23,7 @@ const Home = () => {
       <div className="Home-wrapper-1">
         <img src={bg} alt="bg cover" data-aos="fade-left" />
         <h1 className="img-label" data-aos="zoom-out">
-          MDT HINDHU COLLEGE LIBRARY
+          MDT HINDU COLLEGE LIBRARY
         </h1>
       </div>
 

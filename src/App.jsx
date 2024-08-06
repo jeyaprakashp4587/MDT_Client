@@ -10,7 +10,7 @@ function App() {
     AOS.init({
       duration: 1300,
       easing: "ease-in-out",
-      once: "true",
+      once: true,
       mirror: false,
     });
   }, []);
