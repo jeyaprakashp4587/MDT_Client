@@ -16,7 +16,8 @@ const Home = () => {
   // route name
   const routeName = useLocation();
   // carosel images
-
+  // e-books
+  const render_length = new Array(20);
   return (
     <div className="Home-wrapper">
       {/*  wrapper 1 image */}
@@ -143,7 +144,11 @@ const Home = () => {
         <div className="Home-wrapper-2-right">
           <div className="section-heading">
             <span></span>
-            <h2>Most Popular Books</h2>
+            <h2>E-Books</h2>
+          </div>
+          {/* books list */}
+          <div>
+            <img src="https://i.ibb.co/0VjhfH9/6522.jpg" alt="" />
           </div>
         </div>
       </div>
