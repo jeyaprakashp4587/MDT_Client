@@ -17,7 +17,9 @@ const Home = () => {
   const routeName = useLocation();
   // carosel images
   // e-books
-  const render_length = new Array(20);
+  const render_length = new Array(16).fill(null);
+  //
+
   return (
     <div className="Home-wrapper">
       {/*  wrapper 1 image */}
@@ -146,9 +148,17 @@ const Home = () => {
             <span></span>
             <h2>E-Books</h2>
           </div>
-          {/* books list */}
-          <div>
-            <img src="https://i.ibb.co/0VjhfH9/6522.jpg" alt="" />
+          {/* book list */}
+          <div className="Home-wrapper-2-right-book-list">
+            {render_length.map((i, index) => (
+              <div
+                data-aos={index % 2 == 0 ? "fade-up-right" : "fade-up-left"}
+                key={index}
+              >
+                <img src="https://i.ibb.co/0VjhfH9/6522.jpg" alt="" />
+                <p>American Journel</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
