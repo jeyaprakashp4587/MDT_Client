@@ -32,12 +32,27 @@ const Contact = () => {
 
   return (
     <div className="contact-wrapper">
-      <h3>Let connect us</h3>
+      <h3 data-aos="zoom-in">Let connect us</h3>
       <div className="contact-wrapper-inputs">
-        <TextField id="outlined-basic" label="Full Name" variant="outlined" />
-        <TextField id="outlined-basic" label="Email" variant="outlined" />
-        <TextField id="outlined-basic" label="Message" variant="outlined" />
-        <button onClick={() => sendMail()}>
+        <TextField
+          id="outlined-basic"
+          label="Full Name"
+          variant="outlined"
+          data-aos="fade-up-left"
+        />
+        <TextField
+          id="outlined-basic"
+          label="Email"
+          variant="outlined"
+          data-aos="fade-up-right"
+        />
+        <TextField
+          id="outlined-basic"
+          label="Message"
+          variant="outlined"
+          data-aos="fade-up-left"
+        />
+        <button onClick={() => sendMail()} data-aos="zoom-in">
           <FontAwesomeIcon icon={faPaperPlane} /> submit
         </button>
       </div>
