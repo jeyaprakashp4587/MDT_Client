@@ -38,19 +38,19 @@ const Contact = () => {
           id="outlined-basic"
           label="Full Name"
           variant="outlined"
-          data-aos="fade-up-left"
+          data-aos="fade-up"
         />
         <TextField
           id="outlined-basic"
           label="Email"
           variant="outlined"
-          data-aos="fade-up-right"
+          data-aos="fade-up"
         />
         <TextField
           id="outlined-basic"
           label="Message"
           variant="outlined"
-          data-aos="fade-up-left"
+          data-aos="fade-up"
         />
         <button onClick={() => sendMail()} data-aos="zoom-in">
           <FontAwesomeIcon icon={faPaperPlane} /> submit
