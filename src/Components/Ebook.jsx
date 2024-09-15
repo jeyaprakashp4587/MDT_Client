@@ -28,20 +28,16 @@ const Ebook = () => {
           <h2>Publisher</h2>
         </div>
         {/* lists */}
-        {ebooks.map((book, index) => (
-          <div
-            data-aos="zoom-out"
-            data-aos-duration="700"
-            className="booklist-lists"
-          >
+        <div className="booklist-lists">
+          {ebooks.map((book, index) => (
             <div className="booklist-list">
               <div>{index}</div>
               <div>{book.bookName} </div>
               <div>{book.language}</div>
               <div>{book.authorName}</div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -8,10 +8,17 @@ const Collection = () => {
   const navigate = useNavigate();
   // nav link items
   const [selectedItem, setSelectedItem] = useState(null);
-  const handleClick = (index) => {
+  const handleClick = (index, route) => {
     setSelectedItem(index);
+    navigate(route);
   };
-  const Navitems = ["New Arrivals", "Books", "E-Books", "Journals"];
+  // const Navitems = ["New Arrivals", "Books", "E-Books", "Journals"];
+  const Navitems = [
+    { name: "New Arrivals", route: "/NewArival" },
+    { name: "ALL Books", route: "/Allbooks" },
+    { name: "E-Books", route: "/ebook" },
+    { name: "Journals", route: "/journal" },
+  ];
   // nav links
   return (
     <div className="collection-wrapper">
@@ -26,10 +33,10 @@ const Collection = () => {
             key={index}
             className={selectedItem === index ? "selected" : ""}
             onClick={() => {
-              handleClick(index);
+              handleClick(index, item.route);
             }}
           >
-            {item}
+            {item.name}
           </li>
         ))}
       </div>
@@ -49,7 +56,7 @@ const Collection = () => {
         </div>
         {/* lists */}
         <div className="booklist-lists">
-          <div className="booklist-list" data-aos="zoom-out">
+          <div className="booklist-list">
             <div>1</div>
             <div>Pirates of the caribean </div>
             <div>Tamil</div>

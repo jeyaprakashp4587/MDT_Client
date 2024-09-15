@@ -58,8 +58,10 @@
 }
 .booklist-lists {
   margin-top: 1rem;
+  /* border: 1px solid red; */
 }
 .booklist-list {
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: 1fr 3fr 1fr 3fr;
   justify-content: space-between;
